@@ -1,0 +1,848 @@
+<div class="yl-subheader">
+    <div class="yl-subheader_main">
+        <span class="yl-subheader_title">Users</span>
+        <span class="separator-v"></span>
+        <span class="yl-subheader_result">345 Total</span>
+        <div class="yl-subheader_search">
+            <input type="text" placeholder="Search ...">
+        </div>
+    </div>
+    <div class="yl-subheader_tool">
+        <a href="" class="btn btn-outline-primary">Add User</a>
+    </div>
+</div>
+
+<div class="yl-container">
+    <div class="row">
+        <div class="col-lg-3 col-sm-12" *ngFor="let user of service.listUsers">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>{{ user.firstname +" "+ user.lastname }}</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>{{ user.email }}</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>{{ user.phone }}</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+            <div class="yl-card">
+                <div class="yl-menu_tool dropdown">
+                    <a data-toggle="dropdown" aria-expanded="false" class="yl-btn_tool">
+                        <i class="ti ti-more-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-trans yl-menu_dropdown" aria-labelledby="dropdownMenuButton">
+                        <ul class="yl-menu_nav">
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="yl-menu_item">
+                                <a  class="yl-menu_link" href="">
+                                    <span class="yl-menu_link-icon">
+                                        <i class="ti ti-email"></i>
+                                    </span>
+                                    <span class="yl-menu_link-text">
+                                        Messages
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yl-card_header">
+                    <div class="yl-head_pic">
+                        <img src="assets/img/yassine.jpg">
+                    </div>
+                    <div class="yl-head_info">
+                        <a href="" class="yl-info_title">
+                            <span>Yassine lahbib</span>
+                        </a>
+                        <span class="yl-info_desc">Developper</span>
+                    </div>
+                </div>
+                <div class="yl-card_body">
+                    <div class="yl-card_desc">
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at facilisis velit, quis vehicula ante.
+                        </span>
+                    </div>
+                    <div class="yl-card_detail">
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Email:</span>
+                            <span>yassine@gmail.com</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Phone:</span>
+                            <span>236432544</span>
+                        </div>
+                        <div class="yl-card_item">
+                            <span class="yl-item_label">Location:</span>
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="yl-card_footer">
+                    <a href="" class="btn btn-outline-success">Write Message</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yl-pagination">
+        <ul class="yl-nav_pagination">
+            <li class="yl-pagination_link-first"><a href=""><i class="ti ti-angle-double-left"></i></a></li>
+            <li class="yl-pagination_link-prev"><a href=""><i class="ti ti-angle-left"></i></a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li class="yl-pagination_link-next"><a href=""><i class="ti ti-angle-right"></i></a></li>
+            <li class="yl-pagination_link-last"><a href=""><i class="ti ti-angle-double-right"></i></a></li>
+        </ul>
+    </div>
+</div>

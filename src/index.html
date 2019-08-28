@@ -7,8 +7,71 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="@icon/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+
 </head>
 <body>
   <app-root></app-root>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/template.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+
+      $("ul#yl-menu_nav  li.yl-menu_item").click(function () {
+        $(this).toggleClass('active').siblings().removeClass('active');
+
+      })
+
+      $("#yl-side_toggler").click(function () {
+        $('body').toggleClass('yl-side_minimize')
+
+        if ($('body').hasClass('yl-side_minimize-hover') ) {
+          $('body').toggleClass('yl-side_minimize yl-side_minimize-hover')
+        }
+      })
+
+
+
+      $("#yl-sidebar").mouseenter(function () {
+
+       if ($('body').hasClass('yl-side_minimize') ) {
+         $('body').toggleClass('yl-side_minimize yl-side_minimize-hover')
+       }
+
+
+      })
+      $("#yl-sidebar").mouseleave(function () {
+
+       if ($('body').hasClass('yl-side_minimize-hover')){
+         $('body').toggleClass('yl-side_minimize yl-side_minimize-hover')
+       }
+
+      })
+
+      $("#yl-side_mobile-toggler").click(function () {
+        $("#yl-sidebar").toggleClass('yl-side-show');
+      })
+
+      $("#yl-side_btn-close").click(function () {
+        $("#yl-sidebar").removeClass('yl-side-show');
+      })
+
+
+
+
+
+
+
+
+    })
+
+  </script>
 </body>
 </html>
